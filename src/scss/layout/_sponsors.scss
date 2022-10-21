@@ -1,0 +1,36 @@
+@import '../base/variables';
+
+#sponsors {
+  background-color: $black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .sponsors-heading {
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .sponsors-logos {
+    flex-wrap: wrap;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      transform: scale(0.75);
+      filter: grayscale(100%);
+    }
+  }
+}
+
+.about-sponsors {
+  display: block;
+
+  @media only screen and (min-width: $desktop-size) {
+    display: block !important;
+  }
+}
