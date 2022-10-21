@@ -410,9 +410,84 @@ blockquote {
   font-size: 16px;
 }
 
+#sponsors {
+  background-color: #272a31;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#sponsors .sponsors-heading {
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#sponsors .sponsors-logos {
+  flex-wrap: wrap;
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+#sponsors .sponsors-logos img {
+  transform: scale(0.75);
+  filter: grayscale(100%);
+}
+
+.about-sponsors {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .about-sponsors {
+    display: block !important;
+  }
+}
+
+.last-section {
+  height: 100px;
+}
+
+footer {
+  margin-top: 0;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+footer h6 {
+  color: black;
+  font-size: 10px;
+  margin: 0;
+}
+footer .footer-text {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-text p {
+  margin: 0;
+  font-size: 9px;
+}
+
+#black {
+  background-color: white;
+  color: black;
+}
+#black h6 {
+  color: black;
+}
+@media only screen and (min-width: 768px) {
+  #black {
+    background-color: #272a31;
+    color: white;
+  }
+  #black h6 {
+    color: white;
+  }
+}
+
 /*@import './layout/dancers';
-@import './layout/sponsors';
-@import './layout/footer';
 @import './pages/about';
 */
 
