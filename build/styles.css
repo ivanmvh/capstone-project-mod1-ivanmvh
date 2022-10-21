@@ -289,9 +289,128 @@ blockquote {
   margin: 0;
 }
 
-/*
-@import './layout/program';
-@import './layout/dancers';
+#program {
+  background-size: cover;
+  background-color: #282b32;
+  padding-right: 0;
+}
+@media only screen and (min-width: 768px) {
+  #program {
+    height: auto;
+  }
+}
+#program .cross-bg {
+  background-image: url("../src/img/backgrounds/pattern_bg.png");
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+#program .cross-bg .line {
+  margin-top: 15px;
+}
+@media only screen and (min-width: 768px) {
+  #program .cross-bg {
+    height: 40vh;
+  }
+  #program .cross-bg .line {
+    margin-top: 15px;
+  }
+}
+#program .cross-bg .program-button {
+  background-color: #f51e06;
+  text-decoration: none;
+  border: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+@media only screen and (min-width: 768px) {
+  #program .cross-bg .program-button {
+    background-color: transparent;
+  }
+}
+#program .cross-bg .program-link {
+  color: white;
+  text-decoration: none;
+  min-width: 133.35px;
+  max-height: 16px;
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  #program .cross-bg .program-link {
+    padding-top: 55px;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #program .cross-bg .program-link:visited {
+    color: white;
+    padding: 35px 0;
+  }
+}
+#program .program-heading {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  top: 30px;
+}
+
+.programs-container {
+  display: grid;
+  margin-top: 20px;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: minmax(370px, 500px);
+}
+@media only screen and (min-width: 768px) {
+  .programs-container {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    align-items: flex-start;
+    max-width: 80%;
+  }
+}
+.programs-container img {
+  justify-self: center;
+}
+.programs-container .program-card {
+  display: grid;
+  justify-self: center;
+  width: 90%;
+  grid-template-columns: 1fr 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.4);
+  height: 90%;
+}
+@media only screen and (min-width: 768px) {
+  .programs-container .program-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+  .programs-container .program-card .program-card:nth-child(4) p {
+    margin-bottom: 0;
+  }
+}
+.programs-container .program-card .program-card-heading {
+  margin: 0;
+  align-self: center;
+  color: #f51e06 !important;
+  font-weight: 700 !important;
+}
+.programs-container .program-card .program-desc {
+  color: white;
+  font-size: 16px;
+}
+
+/*@import './layout/dancers';
 @import './layout/sponsors';
 @import './layout/footer';
 @import './pages/about';
