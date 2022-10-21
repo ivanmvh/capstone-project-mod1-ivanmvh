@@ -144,7 +144,7 @@ body {
   display: block;
   justify-self: flex-start;
   margin-left: 10px;
-  font-size: 40px;
+  font-size: 25px;
 }
 @media only screen and (min-width: 768px) {
   .nav-container .hamburger {
@@ -164,22 +164,23 @@ body {
 }
 
 #header {
-  background-image: url("../src/img/backgrounds/bg-varias-parejas-tango.PNG");
+  background-image: url("../src/img/backgrounds/bg-una-pareja-tango-mobile.PNG");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-bottom: 100px;
   margin-top: 50px;
+  margin-left: 20px;
 }
 @media only screen and (min-width: 768px) {
   #header {
-    background-image: url("../src/img/backgrounds/bg-varias-parejas-tango.PNG");
+    background-image: url("../src/img/backgrounds/bg-una-pareja-tango-desktop.PNG");
     height: 97vh;
     justify-content: start;
     margin-top: 100px;
+    margin-left: 50px;
   }
 }
 
@@ -203,17 +204,19 @@ blockquote {
 
 .header-class {
   font-family: "Montserrat", sans-serif;
-  font-size: 2em;
+  font-size: 3em;
   background: #ff4500;
   background: linear-gradient(to right, rgb(255, 0, 0) 0%, rgba(192, 181, 181, 0.77) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
+  text-align: left;
   margin-top: -20px;
 }
 @media only screen and (min-width: 768px) {
   .header-class {
     margin-bottom: 0;
+    margin-left: 0;
+    text-align: left;
   }
 }
 .header-class div {
@@ -242,23 +245,25 @@ blockquote {
 }
 
 .introduction {
-  text-align: center;
   background-color: #d3d3d3;
   filter: brightness(115%);
   padding: 5px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   border: 5px solid white;
-  min-width: 200px;
+  /*min-width: 200px;*/
+  text-align: left;
+  width: 60%;
 }
 .introduction p {
-  width: 90%;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .introduction {
     font-size: 20px;
+    width: 65%;
   }
 }
 
@@ -273,12 +278,17 @@ blockquote {
   justify-content: center;
   align-content: center;
   border: 5px solid white;
-  /* min-width: 500px; */
+  text-align: left;
+  width: 60%;
+}
+.place p {
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .place {
     font-size: 30px;
     margin: 0;
+    width: 65%;
   }
 }
 .place .date {
@@ -312,7 +322,8 @@ blockquote {
 }
 @media only screen and (min-width: 768px) {
   #program .cross-bg {
-    height: 40vh;
+    height: auto;
+    padding-bottom: 1px;
   }
   #program .cross-bg .line {
     margin-top: 15px;
@@ -408,83 +419,6 @@ blockquote {
 .programs-container .program-card .program-desc {
   color: white;
   font-size: 16px;
-}
-
-#sponsors {
-  background-color: #272a31;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#sponsors .sponsors-heading {
-  color: white;
-  margin-bottom: 15px;
-  text-align: center;
-}
-#sponsors .sponsors-logos {
-  flex-wrap: wrap;
-  display: flex;
-  column-gap: 30px;
-  align-items: center;
-  justify-content: center;
-}
-#sponsors .sponsors-logos img {
-  transform: scale(0.75);
-  filter: grayscale(100%);
-}
-
-.about-sponsors {
-  display: block;
-}
-@media only screen and (min-width: 768px) {
-  .about-sponsors {
-    display: block !important;
-  }
-}
-
-.last-section {
-  height: 100px;
-}
-
-footer {
-  margin-top: 0;
-  height: 100px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 10px;
-}
-footer h6 {
-  color: black;
-  font-size: 10px;
-  margin: 0;
-}
-footer .footer-text {
-  display: flex;
-  flex-direction: column;
-}
-footer .footer-text p {
-  margin: 0;
-  font-size: 9px;
-}
-
-#black {
-  background-color: white;
-  color: black;
-}
-#black h6 {
-  color: black;
-}
-@media only screen and (min-width: 768px) {
-  #black {
-    background-color: #272a31;
-    color: white;
-  }
-  #black h6 {
-    color: white;
-  }
 }
 
 #dancers {
@@ -622,6 +556,83 @@ footer .footer-text p {
   }
 }
 
+#sponsors {
+  background-color: #272a31;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#sponsors .sponsors-heading {
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#sponsors .sponsors-logos {
+  flex-wrap: wrap;
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+#sponsors .sponsors-logos img {
+  transform: scale(0.75);
+  filter: grayscale(100%);
+}
+
+.about-sponsors {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .about-sponsors {
+    display: block !important;
+  }
+}
+
+.last-section {
+  height: 100px;
+}
+
+footer {
+  margin-top: 0;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+footer h6 {
+  color: black;
+  font-size: 10px;
+  margin: 0;
+}
+footer .footer-text {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-text p {
+  margin: 0;
+  font-size: 9px;
+}
+
+#black {
+  background-color: white;
+  color: black;
+}
+#black h6 {
+  color: black;
+}
+@media only screen and (min-width: 768px) {
+  #black {
+    background-color: #272a31;
+    color: white;
+  }
+  #black h6 {
+    color: white;
+  }
+}
+
 .white-box {
   background-color: white;
   filter: brightness(115%);
@@ -634,11 +645,12 @@ footer .footer-text p {
   margin: 16px 5px;
   font-size: 20px;
   width: 80%;
+  border: none;
 }
 @media only screen and (min-width: 768px) {
   .white-box {
     margin: 15px;
-    width: 70%;
+    width: 30%;
   }
 }
 

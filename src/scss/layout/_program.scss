@@ -23,7 +23,8 @@
     }
 
     @media only screen and (min-width: $desktop-size) {
-      height: 40vh;
+      height: auto;
+      padding-bottom: 1px;
 
       .line {
         margin-top: 15px;

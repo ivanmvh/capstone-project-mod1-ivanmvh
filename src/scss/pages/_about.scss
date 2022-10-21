@@ -12,10 +12,11 @@
   margin: 16px 5px;
   font-size: 20px;
   width: 80%;
+  border: none;
 
   @media only screen and (min-width: $desktop-size) {
     margin: 15px;
-    width: 70%;
+    width: 30%;
   }
 }
 
