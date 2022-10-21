@@ -622,7 +622,145 @@ footer .footer-text p {
   }
 }
 
-/*@import './pages/about';
-*/
+.white-box {
+  background-color: white;
+  filter: brightness(115%);
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  margin: 16px 5px;
+  font-size: 20px;
+  width: 80%;
+}
+@media only screen and (min-width: 768px) {
+  .white-box {
+    margin: 15px;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .scale-2 {
+    transform: scale(1.5);
+  }
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+.contact-box .contact-about {
+  text-align: center;
+}
+.contact-box .email {
+  color: black;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  .contact-box .contact-about {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .contact-box .email {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+#about-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  background-size: cover;
+  margin-top: 1%;
+}
+@media only screen and (min-width: 768px) {
+  #about-body {
+    height: auto;
+  }
+}
+#about-body .program-heading {
+  text-align: center;
+  width: 50%;
+  font-size: 30px;
+}
+#about-body .section-divider {
+  height: 1px;
+  width: 100%;
+  background-color: gray;
+  margin-top: 20px;
+}
+#about-body .past-conferences {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about-body .past-conferences p {
+  text-align: center;
+}
+#about-body .past-conferences .conferences-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+#about-body .past-conferences .conferences-container .container {
+  position: relative;
+}
+#about-body .past-conferences .conferences-container .container .text-container .img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+}
+#about-body .past-conferences .conferences-container .container .text-container .img-header {
+  font-size: 30px;
+  top: 30%;
+  font-weight: 700;
+}
+#about-body .past-conferences .conferences-container .container .text-container .img-place {
+  font-size: 27px;
+  min-width: 202.5px;
+}
+#about-body .past-conferences .conferences-container .bg {
+  background-color: red;
+  background-size: cover;
+  object-fit: cover;
+}
+#about-body .past-conferences .conferences-container .bg img {
+  overflow: hidden;
+  mix-blend-mode: darken;
+  width: 90vw;
+  height: auto;
+  min-width: 342px;
+  max-width: 352px;
+}
+@media only screen and (min-width: 768px) {
+  #about-body .past-conferences .conferences-container .bg img {
+    width: 40vw;
+  }
+}
+#about-body .past-conferences .conferences-container .bg:hover {
+  filter: grayscale(100%);
+}
+@media only screen and (min-width: 768px) {
+  #about-body .past-conferences .conferences-container {
+    flex-direction: row;
+    max-width: 1100px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
