@@ -39,7 +39,7 @@ blockquote {
 
 .header-class {
   font-family: $header-font;
-  font-size: 3.0em;
+  font-size: 48px;
   background: #ff4500;
   background: linear-gradient(to right, rgb(255, 0, 0) 0%, rgba(192, 181, 181, 0.77) 80%);
   -webkit-background-clip: text;
@@ -79,17 +79,15 @@ blockquote {
 }
 
 .introduction {
-  background-color: $gray;
+  background-color: white;
   filter: brightness(115%);
   padding: 5px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
   border: 5px solid white;
-  /*min-width: 200px;*/
   text-align: left;
-  width: 60%;
+  width: 50%;
 
   p {
     width: 100%;
@@ -97,7 +95,7 @@ blockquote {
 
   @media only screen and (min-width: $desktop-size) {
     font-size: 20px;
-    width: 65%;
+    width: 45%;
   }
 }
 
@@ -105,15 +103,14 @@ blockquote {
   display: flex;
   flex-direction: column;
   margin-top: 5%;
-  background-color: $gray;
+  background-color: white;
   filter: brightness(115%);
   padding: 0 10px 15px 0;
-  text-align: center;
   justify-content: center;
   align-content: center;
   border: 5px solid white;
   text-align: left;
-  width: 60%;
+  width: 40%;
 
   p {
     width: 100%;
@@ -122,7 +119,7 @@ blockquote {
   @media only screen and (min-width: $desktop-size) {
     font-size: 30px;
     margin: 0;
-    width: 65%;
+    width: 50%;
   }
 
   .date {
