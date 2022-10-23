@@ -3,23 +3,29 @@
 .white-box {
   background-color: white;
   filter: brightness(115%);
-  padding: 5px 10px;
+  padding: 1px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 16px 5px;
+  margin: 1px 5px;
   font-size: 20px;
-  width: 80%;
+  width: 100%;
   border: none;
+  text-align: center;
 
   @media only screen and (min-width: $desktop-size) {
     margin: 15px;
-    width: 30%;
+    width: 100%;
   }
 }
 
 .scale-2 {
+  background-color: rgb(220, 220, 220);
+  padding: 20px 40px;
+  width: 40%;
+  border: 1px solid rgb(200,200,200);
+
   @media only screen and (min-width: $desktop-size) {
     transform: scale(1.5);
   }
@@ -30,15 +36,19 @@
   flex-direction: column;
   align-items: center;
   font-size: 20px;
+  background-color: rgb(244, 244, 244);
+  padding: 20px 70px;
 
   .contact-about {
     text-align: center;
+    margin-bottom: 0;
   }
 
   .email {
     color: black;
     font-weight: bolder;
     text-decoration: underline;
+    margin-top: 0;
   }
 
   @media only screen and (min-width: $desktop-size) {
@@ -61,6 +71,8 @@
   background-color: white;
   background-size: cover;
   margin-top: 1%;
+  padding: 30px 70px;
+  font-size: 22px;
 
   @media only screen and (min-width: $desktop-size) {
     height: auto;
@@ -68,7 +80,7 @@
 
   .program-heading {
     text-align: center;
-    width: 50%;
+    width: 100%;
     font-size: 30px;
   }
 
@@ -105,7 +117,7 @@
 
           .img-header {
             font-size: 30px;
-            top: 30%;
+            top: 20%;
             font-weight: 700;
           }
 
@@ -125,7 +137,7 @@
       padding-bottom: 30px;
 
       .bg {
-        background-color: red;
+        background-color: rgb(198, 94, 62);
         background-size: cover;
         object-fit: cover;
 
@@ -134,8 +146,8 @@
           mix-blend-mode: darken;
           width: 90vw;
           height: auto;
-          min-width: 342px;
-          max-width: 352px;
+          width: 350px; 
+          height: 250px;
 
           @media only screen and (min-width: $desktop-size) {
             width: 40vw;

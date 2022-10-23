@@ -40,7 +40,7 @@ body {
 .line {
   height: 1px;
   width: 20px;
-  background-color: #f51e06;
+  background-color: #ec5242;
 }
 
 .fa-xmark {
@@ -85,7 +85,7 @@ body {
 }
 .mobile-menu a {
   text-decoration: none;
-  color: #f51e06;
+  color: #ec5242;
   font-weight: 700;
   font-size: 30px;
   display: block;
@@ -128,6 +128,7 @@ body {
     list-style: none;
     column-gap: 30px;
     padding-left: 0;
+    background-color: white;
   }
   .nav-container ul li a {
     text-decoration: none;
@@ -135,7 +136,7 @@ body {
     font-size: 16px;
   }
   .nav-container ul li a:hover {
-    color: #f51e06;
+    color: #ec5242;
   }
 }
 .nav-container .hamburger {
@@ -144,7 +145,8 @@ body {
   display: block;
   justify-self: flex-start;
   margin-left: 10px;
-  font-size: 25px;
+  font-size: 50px;
+  font-weight: bolder;
 }
 @media only screen and (min-width: 768px) {
   .nav-container .hamburger {
@@ -153,6 +155,12 @@ body {
 }
 .nav-container .logo {
   justify-self: auto;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .nav-container .logo {
+    display: block;
+  }
 }
 .nav-container .right-side {
   display: flex;
@@ -164,49 +172,52 @@ body {
 }
 
 #header {
-  background-image: url("../src/img/backgrounds/bg-una-pareja-tango-mobile.PNG");
+  background-image: url("../src/img/backgrounds/bg-tango-dancers-city-fade-3.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   padding-bottom: 100px;
-  margin-top: 50px;
-  margin-left: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 1px;
 }
 @media only screen and (min-width: 768px) {
   #header {
-    background-image: url("../src/img/backgrounds/bg-una-pareja-tango-desktop.PNG");
+    background-image: url("../src/img/backgrounds/bg-tango-dancers-city-fade-3.png");
     height: 97vh;
     justify-content: start;
-    margin-top: 100px;
-    margin-left: 50px;
+    padding-right: 75px;
+    padding-left: 140px;
+    padding-top: 80px;
+    margin-top: 50px;
   }
 }
 
-blockquote {
-  color: #f51e06;
-  margin-bottom: 50px;
-  padding-top: 20px;
-  text-align: center;
-  margin-left: 9px;
+.blockquote {
+  color: #ec5242;
+  margin-bottom: 20px;
+  padding-top: 0;
+  text-align: left;
+  margin-left: 0;
   margin-right: 5px;
-  justify-self: baseline;
+  /*justify-self: baseline;*/
   font-size: 20px;
 }
 @media only screen and (min-width: 768px) {
-  blockquote {
+  .blockquote {
     margin-top: 0;
     padding-top: 0;
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
 .header-class {
   font-family: "Montserrat", sans-serif;
-  font-size: 48px;
+  font-size: 2em;
   background: #ff4500;
-  background: linear-gradient(to right, rgb(255, 0, 0) 0%, rgba(192, 181, 181, 0.77) 80%);
+  background: linear-gradient(to right, hsl(21deg, 100%, 50%) 50%, rgb(248, 1, 1) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: left;
@@ -217,6 +228,7 @@ blockquote {
     margin-bottom: 0;
     margin-left: 0;
     text-align: left;
+    font-size: 3em;
   }
 }
 .header-class div {
@@ -240,60 +252,67 @@ blockquote {
 @media only screen and (min-width: 768px) {
   .header-class {
     font-size: 80px;
-    width: 600px;
   }
 }
 
+.hdcl-about {
+  text-align: center;
+}
+
 .introduction {
-  background-color: white;
-  filter: brightness(115%);
+  text-align: justify;
+  background-color: #d3d3d3;
+  filter: brightness(120%);
   padding: 5px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 5px solid white;
-  text-align: left;
-  width: 50%;
+  align-items: flex-start;
+  border: 5px solid rgba(187, 187, 187, 0.2);
 }
 .introduction p {
-  width: 100%;
+  width: 80%;
 }
 @media only screen and (min-width: 768px) {
   .introduction {
     font-size: 20px;
-    width: 45%;
+    width: 60%;
+    text-align: left;
   }
+}
+.introduction p {
+  width: 100%;
 }
 
 .place {
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
-  background-color: white;
+  margin-top: 0;
   filter: brightness(115%);
-  padding: 0 10px 15px 0;
+  padding: 0 1px 1px 0;
   justify-content: center;
   align-content: center;
-  border: 5px solid white;
   text-align: left;
-  width: 40%;
-}
-.place p {
   width: 100%;
+  font-size: 20px p;
+  font-size-width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .place {
     font-size: 30px;
     margin: 0;
-    width: 50%;
+    width: 60%;
   }
 }
 .place .date {
-  font-weight: bolder;
+  font-weight: 900;
   margin-bottom: 7px;
+  font-size: 20px;
+  margin-block-start: 1px;
 }
 .place .salon {
   margin: 0;
+  font-size: 16px;
 }
 
 #program {
@@ -313,6 +332,7 @@ blockquote {
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
+  background-color: rgb(50, 50, 50);
 }
 #program .cross-bg .line {
   margin-top: 15px;
@@ -327,7 +347,7 @@ blockquote {
   }
 }
 #program .cross-bg .program-button {
-  background-color: #f51e06;
+  background-color: #ec5242;
   text-decoration: none;
   border: none;
   margin-top: 20px;
@@ -410,149 +430,101 @@ blockquote {
 .programs-container .program-card .program-card-heading {
   margin: 0;
   align-self: center;
-  color: #f51e06 !important;
+  color: #ec5242 !important;
   font-weight: 700 !important;
+  font-size: 20px;
 }
 .programs-container .program-card .program-desc {
   color: white;
   font-size: 16px;
 }
 
-#dancers {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/********* Here start featured teachers section ***********/
+.featured-teachers #featured-title {
+  color: #d3d3d3;
+  font-weight: bold;
+  padding-top: 5%;
+  text-align: center;
+  color: #272a31;
 }
-@media only screen and (min-width: 768px) {
-  #dancers {
-    margin-top: 50px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .dancers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 200px;
-    flex-wrap: wrap;
-    flex: 1 1 50%;
-    margin: 0 10%;
-  }
-}
-
-.dancer-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 5% 5%;
-  align-self: center;
-  flex: 1;
-}
-@media only screen and (min-width: 768px) {
-  .dancer-card {
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 30px 0;
-  }
-}
-.dancer-card .upper-part {
-  display: flex;
-  min-width: 255px;
-}
-@media only screen and (min-width: 768px) {
-  .dancer-card .upper-part {
-    height: auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-}
-.dancer-card .lower-part {
-  margin-top: 0;
-}
-.dancer-card .lower-part .dancer-introduction-mobile {
-  margin-top: 0;
-  display: block;
-  min-width: 250px;
-  margin-left: 20px;
-}
-@media only screen and (min-width: 768px) {
-  .dancer-card .lower-part .dancer-introduction-mobile {
-    display: none;
-  }
-}
-.dancer-card .dancers-headings {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.dancer-card .dancers-headings .dancer-introduction-desktop {
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  .dancer-card .dancers-headings .dancer-introduction-desktop {
-    display: block;
-    min-width: 287px;
-    max-width: 555px;
-  }
-}
-.dancer-card .dancers-headings .dancer-name {
-  font-weight: 400;
-  margin-bottom: 5px;
-  width: 80px;
-}
-.dancer-card .dancers-headings .dancer-company {
-  font-weight: 400;
-  margin-top: 0;
-  color: #f51e06;
-}
-
-.dancer-image-container {
-  width: 150px;
-  height: 150px;
-  position: relative;
-}
-@media only screen and (min-width: 768px) {
-  .dancer-image-container {
-    max-height: 350px;
-    min-height: 265px;
-    width: 700px;
-    min-width: 280px;
-    max-width: 276px;
-  }
-}
-.dancer-image-container .dancer-bg {
-  background-image: url("../src/img/dancers/dancer-bg.jpg");
-  background-size: cover;
+.featured-teachers .divisor {
+  border: 1px solid #ec5242;
+  background-color: #ec5242;
   width: 50px;
-  height: 50px;
-  position: absolute;
-  z-index: -1;
-}
-@media only screen and (min-width: 768px) {
-  .dancer-image-container .dancer-bg {
-    height: 100px;
-    width: 100px;
-  }
-}
-.dancer-image-container .dancer-image {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  height: 125px;
-  width: 125px;
-}
-@media only screen and (min-width: 768px) {
-  .dancer-image-container .dancer-image {
-    top: 40px;
-    left: 40px;
-    height: 225px;
-    width: 225px;
-  }
+  opacity: 1;
+  margin-top: -2px;
 }
 
+.teachers-grid {
+  width: 95%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.teachers-grid .teacher-img {
+  width: 120px;
+  height: 120px;
+  margin-right: 24px;
+}
+.teachers-grid .teacher-name {
+  font-size: 15px;
+  margin: 0;
+  font-weight: bold;
+}
+.teachers-grid .teacher-position {
+  font-size: 15px;
+  margin: 0;
+  color: #ec5242;
+  margin-top: 5px;
+}
+.teachers-grid .teacher-description {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 5px;
+  font-weight: normal;
+}
+.teachers-grid .teacher-div {
+  width: 50px;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  /********* Here start featured teachers section ***********/
+  .featured-teachers #featured-title {
+    color: #d3d3d3;
+    font-weight: bold;
+    padding-top: 5%;
+    text-align: center;
+    color: #272a31;
+  }
+  .featured-teachers .divisor {
+    border: 1px solid #ec5242;
+    background-color: #ec5242;
+    width: 50px;
+    opacity: 1;
+    margin-top: -2px;
+  }
+  .featured-teachers .teacher {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .teachers-grid {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .teachers-grid .teacher-img {
+    width: 125px;
+    height: 125px;
+  }
+}
 #sponsors {
   background-color: #272a31;
   width: 100%;
@@ -633,23 +605,30 @@ footer .footer-text p {
 .white-box {
   background-color: white;
   filter: brightness(115%);
-  padding: 5px 10px;
+  padding: 1px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 16px 5px;
+  margin: 1px 5px;
   font-size: 20px;
-  width: 80%;
+  width: 100%;
   border: none;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .white-box {
     margin: 15px;
-    width: 30%;
+    width: 100%;
   }
 }
 
+.scale-2 {
+  background-color: rgb(220, 220, 220);
+  padding: 20px 40px;
+  width: 40%;
+  border: 1px solid rgb(200, 200, 200);
+}
 @media only screen and (min-width: 768px) {
   .scale-2 {
     transform: scale(1.5);
@@ -661,14 +640,18 @@ footer .footer-text p {
   flex-direction: column;
   align-items: center;
   font-size: 20px;
+  background-color: rgb(244, 244, 244);
+  padding: 20px 70px;
 }
 .contact-box .contact-about {
   text-align: center;
+  margin-bottom: 0;
 }
 .contact-box .email {
   color: black;
   font-weight: bolder;
   text-decoration: underline;
+  margin-top: 0;
 }
 @media only screen and (min-width: 768px) {
   .contact-box .contact-about {
@@ -688,6 +671,8 @@ footer .footer-text p {
   background-color: white;
   background-size: cover;
   margin-top: 1%;
+  padding: 30px 70px;
+  font-size: 22px;
 }
 @media only screen and (min-width: 768px) {
   #about-body {
@@ -696,7 +681,7 @@ footer .footer-text p {
 }
 #about-body .program-heading {
   text-align: center;
-  width: 50%;
+  width: 100%;
   font-size: 30px;
 }
 #about-body .section-divider {
@@ -736,7 +721,7 @@ footer .footer-text p {
 }
 #about-body .past-conferences .conferences-container .container .text-container .img-header {
   font-size: 30px;
-  top: 30%;
+  top: 20%;
   font-weight: 700;
 }
 #about-body .past-conferences .conferences-container .container .text-container .img-place {
@@ -744,7 +729,7 @@ footer .footer-text p {
   min-width: 202.5px;
 }
 #about-body .past-conferences .conferences-container .bg {
-  background-color: red;
+  background-color: rgb(198, 94, 62);
   background-size: cover;
   object-fit: cover;
 }
@@ -753,8 +738,8 @@ footer .footer-text p {
   mix-blend-mode: darken;
   width: 90vw;
   height: auto;
-  min-width: 342px;
-  max-width: 352px;
+  width: 350px;
+  height: 250px;
 }
 @media only screen and (min-width: 768px) {
   #about-body .past-conferences .conferences-container .bg img {

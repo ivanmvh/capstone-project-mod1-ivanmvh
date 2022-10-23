@@ -4,44 +4,47 @@
   background-image: url($mobile-bg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   padding-bottom: 100px;
-  margin-top: 50px;
-  margin-left: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 1px;
 
   @media only screen and (min-width: $desktop-size) {
     background-image: url($desktop-bg);
     height: 97vh;
     justify-content: start;
-    margin-top: 100px;
-    margin-left: 50px;
+    padding-right: 75px;
+    padding-left: 140px;
+    padding-top: 80px;
+    margin-top: 50px;
   }
 }
 
-blockquote {
+.blockquote {
   color: $orange;
-  margin-bottom: 50px;
-  padding-top: 20px;
-  text-align: center;
-  margin-left: 9px;
+  margin-bottom: 20px;
+  padding-top: 0;
+  text-align: left;
+  margin-left: 0;
   margin-right: 5px;
-  justify-self: baseline;
+  /*justify-self: baseline;*/
   font-size: 20px;
 
   @media only screen and (min-width: $desktop-size) {
     margin-top: 0;
     padding-top: 0;
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
 .header-class {
   font-family: $header-font;
-  font-size: 48px;
+  font-size: 2em;
   background: #ff4500;
-  background: linear-gradient(to right, rgb(255, 0, 0) 0%, rgba(192, 181, 181, 0.77) 80%);
+  background: linear-gradient(to right, hsl(21, 100%, 50%, 1) 50%, rgba(248, 1, 1, 1) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: left;
@@ -51,6 +54,7 @@ blockquote {
     margin-bottom: 0;
     margin-left: 0;
     text-align: left;
+    font-size: 3em;
   }
 
   div {
@@ -74,43 +78,50 @@ blockquote {
 
   @media only screen and (min-width: $desktop-size) {
     font-size: 80px;
-    width: 600px;
   }
 }
 
+.hdcl-about {
+  text-align: center; 
+}
+
 .introduction {
-  background-color: white;
-  filter: brightness(115%);
+  text-align: justify;
+  background-color: $gray;
+  filter: brightness(120%);
   padding: 5px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 5px solid white;
-  text-align: left;
-  width: 50%;
+  align-items:flex-start;
+  border: 5px solid rgb(187, 187, 187,0.2);
 
   p {
-    width: 100%;
+    width: 80%;
   }
 
   @media only screen and (min-width: $desktop-size) {
     font-size: 20px;
-    width: 45%;
+    width: 60%;
+    text-align: left;
+  }
+
+  p {
+    width: 100%;
   }
 }
 
 .place {
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
-  background-color: white;
+  margin-top: 0;
   filter: brightness(115%);
-  padding: 0 10px 15px 0;
+  padding: 0 1px 1px 0;
   justify-content: center;
   align-content: center;
-  border: 5px solid white;
   text-align: left;
-  width: 40%;
+  width: 100%;
+  font-size: 20px
 
   p {
     width: 100%;
@@ -119,15 +130,18 @@ blockquote {
   @media only screen and (min-width: $desktop-size) {
     font-size: 30px;
     margin: 0;
-    width: 50%;
+    width: 60%;
   }
 
   .date {
-    font-weight: bolder;
+    font-weight: 900;
     margin-bottom: 7px;
+    font-size: 20px;
+    margin-block-start: 1px;
   }
 
   .salon {
     margin: 0;
+    font-size: 16px;
   }
 }

@@ -20,6 +20,7 @@
       list-style: none;
       column-gap: 30px;
       padding-left: 0;
+      background-color: white;
 
       li {
         a {
@@ -41,7 +42,8 @@
     display: block;
     justify-self: flex-start;
     margin-left: 10px;
-    font-size: 25px;
+    font-size: 50px;
+    font-weight: bolder;
 
     @media only screen and (min-width: $desktop-size) {
       display: none;
@@ -50,6 +52,11 @@
 
   .logo {
     justify-self: auto;
+    display: none;
+
+    @media only screen and (min-width: $desktop-size) {
+      display: block;
+    }
   }
 
   .right-side {
