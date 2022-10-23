@@ -495,9 +495,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  /********* Here start featured teachers section ***********/
+  /* ******** Here start featured teachers section ********** */
   .featured-teachers #featured-title {
-    color: #d3d3d3;
     font-weight: bold;
     padding-top: 5%;
     text-align: center;
