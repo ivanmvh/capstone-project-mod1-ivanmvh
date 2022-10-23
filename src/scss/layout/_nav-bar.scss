@@ -9,7 +9,7 @@
   @media only screen and (min-width: $desktop-size) {
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: column;
-    margin: 10px 15% 0 7%;
+    margin: 10px 5% 0 7%;
   }
 
   ul {
@@ -62,6 +62,21 @@
   .right-side {
     display: flex;
     justify-content: flex-end;
+    align-items: baseline;
+  }
+}
+
+.campaign {
+  display: none;
+  
+  @media only screen and (min-width: $desktop-size) {
+    display: block;
+    margin-top: 0;
+    height: 50px;
+    width: 140px;
+    border: 5px solid $orange;
+    margin-right: 1%;
+    margin-left: 20px;
   }
 }
 
