@@ -24,7 +24,7 @@
   background-color: rgb(220, 220, 220);
   padding: 20px 40px;
   width: 40%;
-  border: 1px solid rgb(200,200,200);
+  border: 1px solid rgb(200, 200, 200);
 
   @media only screen and (min-width: $desktop-size) {
     transform: scale(1.5);
@@ -144,9 +144,7 @@
         img {
           overflow: hidden;
           mix-blend-mode: darken;
-          width: 90vw;
-          height: auto;
-          width: 350px; 
+          width: 350px;
           height: 250px;
 
           @media only screen and (min-width: $desktop-size) {

@@ -202,7 +202,6 @@ body {
   text-align: left;
   margin-left: 0;
   margin-right: 5px;
-  /*justify-self: baseline;*/
   font-size: 20px;
 }
 @media only screen and (min-width: 768px) {
@@ -279,9 +278,9 @@ body {
     width: 60%;
     text-align: left;
   }
-}
-.introduction p {
-  width: 100%;
+  .introduction p {
+    width: 100%;
+  }
 }
 
 .place {
@@ -294,8 +293,10 @@ body {
   align-content: center;
   text-align: left;
   width: 100%;
-  font-size: 20px p;
-  font-size-width: 100%;
+  font-size: 20px;
+}
+.place p {
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .place {
@@ -441,7 +442,6 @@ body {
 
 /********* Here start featured teachers section ***********/
 .featured-teachers #featured-title {
-  color: #d3d3d3;
   font-weight: bold;
   padding-top: 5%;
   text-align: center;
@@ -736,8 +736,6 @@ footer .footer-text p {
 #about-body .past-conferences .conferences-container .bg img {
   overflow: hidden;
   mix-blend-mode: darken;
-  width: 90vw;
-  height: auto;
   width: 350px;
   height: 250px;
 }

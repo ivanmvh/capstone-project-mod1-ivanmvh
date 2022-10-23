@@ -30,7 +30,6 @@
   text-align: left;
   margin-left: 0;
   margin-right: 5px;
-  /*justify-self: baseline;*/
   font-size: 20px;
 
   @media only screen and (min-width: $desktop-size) {
@@ -82,7 +81,7 @@
 }
 
 .hdcl-about {
-  text-align: center; 
+  text-align: center;
 }
 
 .introduction {
@@ -94,7 +93,7 @@
   flex-direction: column;
   justify-content: center;
   align-items:flex-start;
-  border: 5px solid rgb(187, 187, 187,0.2);
+  border: 5px solid rgb(187, 187, 187, 0.2);
 
   p {
     width: 80%;
@@ -104,10 +103,10 @@
     font-size: 20px;
     width: 60%;
     text-align: left;
-  }
 
-  p {
-    width: 100%;
+    p {
+      width: 100%;
+    }
   }
 }
 
@@ -121,7 +120,7 @@
   align-content: center;
   text-align: left;
   width: 100%;
-  font-size: 20px
+  font-size: 20px;
 
   p {
     width: 100%;

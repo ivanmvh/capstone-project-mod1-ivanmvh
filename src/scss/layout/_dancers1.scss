@@ -2,7 +2,6 @@
 
 .featured-teachers {
   #featured-title {
-    color: $white;
     font-weight: bold;
     padding-top: 5%;
     text-align: center;
@@ -65,16 +64,15 @@
 @media screen and (min-width: 768px) {
 
   /********* Here start featured teachers section ***********/
-
   .featured-teachers {
     #featured-title {
       color: $white;
       font-weight: bold;
       padding-top: 5%;
-      text-align: center; 
+      text-align: center;
       color: $black;
     }
-  
+
     .divisor {
       border: 1px solid $orange;
       background-color: $orange;
