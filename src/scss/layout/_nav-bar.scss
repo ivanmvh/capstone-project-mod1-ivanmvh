@@ -1,0 +1,85 @@
+@import '../base/variables';
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  justify-content: space-around;
+  align-items: center;
+
+  @media only screen and (min-width: $desktop-size) {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    margin: 10px 5% 0 7%;
+  }
+
+  ul {
+    display: none;
+
+    @media only screen and (min-width: $desktop-size) {
+      display: flex;
+      list-style: none;
+      column-gap: 30px;
+      padding-left: 0;
+      background-color: white;
+
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 16px;
+        }
+
+        a:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    justify-self: flex-start;
+    margin-left: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+
+    @media only screen and (min-width: $desktop-size) {
+      display: none;
+    }
+  }
+
+  .logo {
+    justify-self: auto;
+    display: none;
+
+    @media only screen and (min-width: $desktop-size) {
+      display: block;
+    }
+  }
+
+  .right-side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+}
+
+.campaign {
+  display: none;
+
+  @media only screen and (min-width: $desktop-size) {
+    display: block;
+    margin-top: 0;
+    height: 50px;
+    width: 140px;
+    border: 5px solid $orange;
+    margin-right: 1%;
+    margin-left: 20px;
+  }
+}
+
+.past-conferences {
+  min-width: 95px;
+}

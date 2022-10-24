@@ -1,0 +1,99 @@
+/********* Here start featured teachers section ***********/
+
+.featured-teachers {
+  #featured-title {
+    font-weight: bold;
+    padding-top: 5%;
+    text-align: center;
+    color: $black;
+  }
+
+  .divisor {
+    border: 1px solid $orange;
+    background-color: $orange;
+    width: 50px;
+    opacity: 1;
+    margin-top: -2px;
+  }
+}
+
+.teachers-grid {
+  width: 95%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+  .teacher-img {
+    width: 120px;
+    height: 120px;
+    margin-right: 24px;
+  }
+
+  .teacher-name {
+    font-size: 15px;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .teacher-position {
+    font-size: 15px;
+    margin: 0;
+    color: $orange;
+    margin-top: 5px;
+  }
+
+  .teacher-description {
+    font-size: 15px;
+    margin: 0;
+    margin-top: 5px;
+    font-weight: normal;
+  }
+
+  .teacher-div {
+    width: 50px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-weight: normal;
+    font-style: italic;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* ******** Here start featured teachers section ********** */
+  .featured-teachers {
+    #featured-title {
+      font-weight: bold;
+      padding-top: 5%;
+      text-align: center;
+      color: $black;
+    }
+
+    .divisor {
+      border: 1px solid $orange;
+      background-color: $orange;
+      width: 50px;
+      opacity: 1;
+      margin-top: -2px;
+    }
+
+    .teacher {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  }
+
+  .teachers-grid {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr;
+
+    .teacher-img {
+      width: 125px;
+      height: 125px;
+    }
+  }
+}
