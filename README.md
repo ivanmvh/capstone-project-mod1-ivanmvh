@@ -2,7 +2,7 @@
 
 # Capstone 1
 
- In his capstone project I build a webpage based on an online website for a conference on Behance.
+ In this capstone project I build a webpage based on a template of the site Behance. The website is about a conference. 
 
 ## Built With
 
