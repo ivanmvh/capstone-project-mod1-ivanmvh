@@ -27,7 +27,7 @@ const teachersData = [
     image: './src/img/dancers/4-inclusive dance 2-c.jpg',
     name: 'Monica and Lucy',
     position: 'Paris, France',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas accusamus eaque officia obcaecati nam,.',
+    description: 'Lorem lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas accusamus eaque officia obcaecati nam,.',
   },
   {
     id: '5',
