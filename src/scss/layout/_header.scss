@@ -43,7 +43,9 @@
   font-family: $header-font;
   font-size: 2em;
   background: #ff4500;
-  background: linear-gradient(to right, hsl(21, 100%, 50%, 1) 50%, rgba(248, 1, 1, 1) 50%);
+  background: conic-gradient(0.1turn, rgb(255, 17, 0) 0%, #ebbbbbfa 100%);
+  background: linear-gradient(#f69d3c, #3f87a6);
+  background: linear-gradient($orange, rgb(196, 145, 176));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: left;

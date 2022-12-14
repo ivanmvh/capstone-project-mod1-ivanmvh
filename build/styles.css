@@ -240,7 +240,9 @@ body, html {
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
   background: #ff4500;
-  background: linear-gradient(to right, hsl(21deg, 100%, 50%) 50%, rgb(248, 1, 1) 50%);
+  background: conic-gradient(0.1turn, rgb(255, 17, 0) 0%, rgba(235, 187, 187, 0.9803921569) 100%);
+  background: linear-gradient(#f69d3c, #3f87a6);
+  background: linear-gradient(#ec5242, rgb(196, 145, 176));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: left;
