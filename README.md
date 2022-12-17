@@ -12,9 +12,8 @@
 - Git
 - SCSS
 
-## Live Demo (if available)
-
-[Live Demo Link]
+## Live Demo (You can see a Demo of this project)
+[https://ivanmvh.github.io/capstone-project-mod1-ivanmvh/]
 
 
 ## Getting Started
