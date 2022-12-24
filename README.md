@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Capstone 1
+# Capstone - Tango Festival
 
-In this final project, I build a web page based on a template from the Behance site. The website is about a conference. The goal of this project is to create a web page using the Behance guidelines.
+In this capstone project  we are going to build is based on an online website for a conference. They provide some design guidelines for we to create the website, but we must personalize the content, i.e., instead of a conference you can build a website for a concert or for a web development course. It's very important the we personalize our project so that we have something unique in our portfolio to share with potential employers during job searching. We select an International Tango Festival.
 
 ## Built With
 
