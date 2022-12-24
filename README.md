@@ -2,7 +2,7 @@
 
 # Capstone 1
 
- In this capstone project I build a webpage based on a template of the site Behance. The website is about a conference. 
+In this final project, I build a web page based on a template from the Behance site. The website is about a conference. The goal of this project is to create a web page using the Behance guidelines.
 
 ## Built With
 
